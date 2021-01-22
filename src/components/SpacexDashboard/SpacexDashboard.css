@@ -1,0 +1,226 @@
+/* ***** Mobile view *********  */
+.header{
+  font-size:30px;
+  font-weight: bold;
+}
+
+/* main div css for sidebar */
+.sidebar{
+    width:100%;
+    background-color: var(--white);
+    border-radius: 6px;
+    min-height:570px;
+    height: auto;
+    margin-top:10px;
+}
+
+.filter-header{
+    padding: 10px 0px 3px 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.filter-name{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.filter-name:after {
+    content: ""; 
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    padding-top: 5px;
+    border-bottom: 1px solid var(--greyForText);
+}
+
+.filter-flex{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.filter-year-div{
+  width: 50%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a.filter-year{
+    width: 40px;
+    padding: 3px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+
+/* ***************  main div css for content ************* */
+.main-content{
+   float: left;
+   width: 100%;
+}
+
+.launch-content{
+   width:100%;
+   background-color: var(--white);
+   margin-top: 16px;
+   display:flex;
+   flex-direction: column;
+   min-height: 400px;
+   height: auto;
+   border-radius: 5px;
+
+}
+
+.launch-content > .image-content{
+    width:86%;
+    background-color: var(--grey);
+    height: 150px;
+    align-self: center;
+    margin-top: 22px;
+}
+
+.launch-image{
+    max-width: 150px;
+    margin: 0 auto;
+    display: block;
+}
+
+.launch-content > .launch-details{
+    width:86%;
+    height: 150px;
+    align-self: center;
+    margin-top: 10px;
+}
+
+span.mission-name{
+  font-weight:bold;
+  color:var(--blue);
+  display:block;
+}
+
+span.mission-details{
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+ul.mission-ids{
+   margin-top:4px!important;
+}
+
+span.mission-key{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+span.mission-value{
+   color:var(--greyForText);
+   margin-left: 3px;
+   font-size: 14px;
+}
+
+.no-data-found{
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    font-size: 30px;
+}
+
+/*  ************** footer **************** */
+
+.footer{
+    text-align: center;
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 35px;
+    width: 100%;
+}
+
+.footer>span{
+  display:block;
+}
+
+
+/* media query for tablet */
+@media screen and (min-width : 701px) and (max-width : 1024px){
+    .sidebar{
+        float:left;
+        width:48%;
+        margin-top:16px;
+    }
+
+    .main-content{
+        float: left;
+        width: 50%;
+        margin-left:10px;
+     }
+
+     .footer>span{
+        display:inline;
+      }
+         
+}
+
+/* media query for desktop */
+@media screen and (min-width : 1025px) and (max-width : 1440px){
+    .sidebar{
+        float:left;
+        width:25%;
+        margin-top:16px;
+    }
+
+    .main-content{
+        float: left;
+        width: 74%;
+        margin-left:10px;
+     }
+
+    .launch-content{
+        width:31.33%;
+        float: left;
+        margin-left: 16px;
+    }   
+    
+    .footer>span{
+        display:inline;
+    }
+  
+}
+
+@media screen and (min-width:1441px){
+    .sidebar{
+        float:left;
+        width:25%;
+        margin-top:16px;
+    }
+
+    .main-content{
+        float: left;
+        width: 74%;
+        margin-left:12px;
+     }
+
+    .launch-content{
+        width:31.33%;
+        float: left;
+        margin-left: 16px;
+    }   
+    
+    .main-container{
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .footer>span{
+        display:inline;
+    }
+
+}

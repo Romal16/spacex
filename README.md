@@ -105,6 +105,9 @@ It is a class component.
 
  4. We use nodemon to restart the server when we make changes to it.
 
+ ## npm run dev 
+  this command is to make build , server-build by calling webpack 
+
 
  
 

@@ -191,10 +191,10 @@ class SpacexDashboard extends Component {
             </main>
             
        
-        
+        {/* ************** footer ************ */}
          <footer className="footer"> 
               <span style={{fontWeight:'bold'}}>Developed by:</span> <span>Romal Singla</span>
-        </footer>
+         </footer>
         
         
         

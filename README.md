@@ -68,3 +68,29 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+### About Application
+
+### src/components/SpacexDashboard/SpacexDashboard.jsx
+
+It is a class component.
+
+    design
+
+ - design uses semantic tags (header tag for header , aside tag for sidebar , main tag for main    content , footer tag for footer) .
+ - aside tag contains filters . There are launch year , launch success and land success filters.
+ - main tag contains the launces data coming from API.
+
+   Functionality
+
+ - calling API for spacex on load in componentDidMount() lifecycle .
+ - has four state to set launch data , loader and others to set filter.
+ - After appling filter, filterData() method is called.
+
+ ### src/components/SpacexDashboard/SpacexDashboard.css
+
+
+
+ 

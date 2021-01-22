@@ -10,7 +10,6 @@ function App() {
           <Route path="/" exact component={Dashboard} />
         </Switch>
       </Router>
-       {/* <h1>Hello Romal!</h1> */}
     </>
   );
 }

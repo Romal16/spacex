@@ -87,9 +87,30 @@ It is a class component.
 
  - calling API for spacex on load in componentDidMount() lifecycle .
  - has four state to set launch data , loader and others to set filter.
- - After appling filter, filterData() method is called.
+ - After applying filter, filterData() method is called and call API according to filters
 
  ### src/components/SpacexDashboard/SpacexDashboard.css
+    To style spacex application
+
+ ### SSR
+
+ 1.install express , webpack ,babel
+
+ 2. make webpack.server.js ->
+    -Here we read the file server/index.js and make server build.
+    -to ignore node_module in server-build we use webpack-node-externals.
+
+ 3. server/index.js ->
+  This file creates express variable and to take static files from build.
+
+ 4. We use nodemon to restart the server when we make changes to it.
+
+
+ 
+
+
+
+
 
 
 
